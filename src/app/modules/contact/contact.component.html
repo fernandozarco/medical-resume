@@ -1,0 +1,78 @@
+<div class="block-container contact-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <h1>Contact Details</h1>
+                <p>785 15h Street, Office 478 <br>
+                    Berlin, De 81566</p>
+                <div class="my-3">
+                    <a href="">info@email.com</a>
+                </div>
+                <div class="my-3">
+                    <a href="tel:59176234714" class="link-text">+591 76234714</a>
+                </div>
+                <div class="social-networks">
+                    <app-social-networks></app-social-networks>
+                </div>
+            </div>
+            <div class="col-8">
+                <form [formGroup]="form">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form_field">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Name</mat-label>
+                                    <mat-icon matPrefix class="icon_form">person_outline</mat-icon>
+                                    <input matInput placeholder="Name" formControlName="name">
+                                </mat-form-field>
+                            </div>
+                            <div class="form_field">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Phone number</mat-label>
+                                    <mat-icon matPrefix class="icon_form">phone_in_talk</mat-icon>
+                                    <input matInput placeholder="Phone number" formControlName="phone_number">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form_field">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Email address</mat-label>
+                                    <mat-icon matPrefix class="icon_form">mail_outline</mat-icon>
+                                    <input matInput placeholder="Email address" formControlName="email">
+                                </mat-form-field>
+                            </div>
+                            <div class="form_field">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Subject</mat-label>
+                                    <mat-icon matPrefix class="icon_form">error_outline</mat-icon>
+                                    <input matInput placeholder="Subject" formControlName="subject">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form_field">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>How can we help you?</mat-label>
+                                    <mat-icon matPrefix class="icon_form"><span class="material-icons-outlined">
+                                            mode_edit_outline
+                                        </span></mat-icon>
+                                    <textarea matInput placeholder="Feel free to tell us." formControlName="body"></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-primary" (click)="submitForm()">
+                                Send message
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

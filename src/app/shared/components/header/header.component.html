@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" [routerLink]="['/']">
+            <img src="assets/img/logo_dentist.png" alt="dental logo" class="dental_logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" [routerLink]="['/']">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [href]="['/#services']">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/about-me']">About me</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link_contact" aria-current="page" href="tel:59176234714">
+                        <img src="assets/img/telephone.png" alt="" class="nav-link_contact_image">
+                        <span>+591 76234714</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary" href="" [routerLink]="['/contact']" routerLinkActive="router-link-active" >Get in touch</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

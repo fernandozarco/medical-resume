@@ -1,0 +1,28 @@
+.social-networks-container {
+    &_item {
+        display: inline-flex;
+        align-items: start;
+        justify-content: center;
+        margin-left: .2rem;
+        margin-right: .2rem;
+
+        width: 45px;
+        height: 45px;
+        border: thin solid #dedfe2;
+        border-radius: 50%;
+        padding-top: 5px;
+
+        &_icon {
+            width: 18px;
+            height: 18px;
+            // opacity: 0.8;
+            transition-duration: 0.5s;
+            filter: grayscale(1);
+
+            &:hover {
+                // opacity: 1;
+                filter: grayscale(0);
+            }
+        }
+    }
+}

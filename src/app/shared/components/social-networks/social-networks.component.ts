@@ -5,7 +5,7 @@ import { DomSanitizer } from "@angular/platform-browser";
 @Component({
   selector: 'app-social-networks',
   templateUrl: './social-networks.component.html',
-  styleUrls: ['./social-networks.component.scss']
+  styleUrls: []
 })
 export class SocialNetworksComponent implements OnInit {
 

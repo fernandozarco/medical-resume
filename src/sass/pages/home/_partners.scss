@@ -1,0 +1,13 @@
+.partners-container {
+    padding: 2rem 0;
+    &_item {
+        &_image {
+            height: 6rem;
+            opacity: 0.2;
+            transition-duration: 0.3s;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

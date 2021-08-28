@@ -1,0 +1,30 @@
+.dental_logo {
+    height: 2.5rem;
+}
+
+.navbar-light {
+    background-color: #ffffff;
+    height: 7rem;
+}
+.navbar-nav {
+    .nav-item {
+        margin-left: .5rem;
+        margin-right: .5rem;
+        .nav-link {
+            color: $text-color;
+            &_contact {
+                margin-right: 2rem;
+                &_image {
+                    display: inline-block;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    margin-right: .5rem;
+                }
+                span {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

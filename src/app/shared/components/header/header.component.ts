@@ -8,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  isPressedHamburgerButton = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleMenu() {
+    this.isPressedHamburgerButton = !this.isPressedHamburgerButton;
   }
 
 }

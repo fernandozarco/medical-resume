@@ -1,5 +1,6 @@
 $text-color-white: #F8F8F8;
-$text-color: #0c0f26;
+$black-color: #0c0f26;
+$text-color: $black-color;
 $success-color: #04ce78;
 $dark-success-color: darken($success-color, 5%);
 $primary-color: #2B88E5;

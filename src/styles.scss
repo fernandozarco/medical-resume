@@ -7,6 +7,23 @@
 // Components
 @import './sass/components/social_networks';
 
+html {
+    font-size: 16px;
+
+    // Small devices (landscape phones, 576px and up)
+    @media (max-width: 767px) { font-size: 13px; } // x <= 767
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { font-size: 14px; } // 768 <= x <= 991
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { font-size: 15px; } // 992 <= x <= 1199
+    // X-Large devices (desktops, 1200px and up)
+    @media (min-width: 1200px) { font-size: 16px; } // x >= 1200
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) { font-size: 16px; }
+}
+
+
+
 .mat-form-field {
     width: 100%;
 }

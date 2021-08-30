@@ -25,7 +25,7 @@ export class SocialNetworksComponent implements OnInit {
     );
     this.matIconRegistry.addSvgIcon(
       "instagram",
-      this.domSanitizer.bypassSecurityTrustResourceUrl('./../../assets/svg/social_networks/instagram.svg')
+      this.domSanitizer.bypassSecurityTrustResourceUrl('./../../assets/svg/social_networks/instagram_app.svg')
     );
     this.matIconRegistry.addSvgIcon(
       "youtube",

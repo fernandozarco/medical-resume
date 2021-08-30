@@ -1,25 +1,37 @@
 .about-me {
     .about_column {
-        .about_column_head {
-            margin: 2rem 0;
-            .about_column_title {
-                font-size: 2rem;
-            }
-            .about_column_subtitle {
-                font-size: 1rem;
-                color: $primary-color;
-            }
-        }
-        .about_column_image {
-            height: 26rem;
-        }
-    }
-    .column_body {
-        padding: 3rem 0;
-    }
+        display: flex;
+        align-items: center;
 
-    .column_image {
-        padding: 3rem 0;
-        text-align: center;
+        &.column_image {
+            .about_column_image {
+                margin: 0 auto;
+                height: 26rem;
+                @media (max-width: 991px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        &.column_body {
+            .container-column {
+                padding: 0 2rem;
+                @media (max-width: 991px) {
+                    padding: 2rem 0;
+                }
+                .about_column_head {
+                    margin: 1rem 0;
+
+                    .about_column_title {
+                        font-size: 2rem;
+                        margin: 0;
+                    }
+                    .about_column_subtitle {
+                        font-size: 1rem;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
     }
 }

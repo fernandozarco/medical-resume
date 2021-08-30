@@ -6,7 +6,13 @@
     background-color: #ffffff;
     height: 7rem;
 }
-// test    
+.navbar-collapse {
+    &_header {
+        visibility: hidden;
+        display: none;
+    }
+}
+// for mobile devices
 @media (max-width: 991px) { 
     .navbar-collapse {
         z-index: 100;
@@ -25,6 +31,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            visibility: visible;
             
             .close {
                 height: 50px;
@@ -64,7 +71,8 @@
         height: 100vh;
     }
 }
-// test    
+// for mobile devices  
+
 .navbar-nav {
     .nav-item {
         margin-left: .5rem;

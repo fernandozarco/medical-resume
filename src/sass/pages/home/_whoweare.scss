@@ -1,11 +1,19 @@
 .about-container {
     &_image {
-        width: 100%;
+        width: 60%;
         margin: 0 auto;
+
+        @media (max-width: 991px) {
+            width: 100%;
+        }
     }
     
     .our-schedule {
-        text-align: center;
+        
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+        
         &-days {
             margin: 1rem 0;
             .sub_paragraph {

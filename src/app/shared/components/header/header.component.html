@@ -8,7 +8,7 @@
             <span class="navbar-toggler-icon" (click)="toggleMenu()"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent" [class.show]="isPressedHamburgerButton">
-            <div class="navbar-collapse_header" *ngIf="isPressedHamburgerButton">
+            <div class="navbar-collapse_header">
                 <div class="logo-hamburger">
                     <img src="assets/img/logo_dentist_dark.png" alt="dental logo">
                 </div>
@@ -24,7 +24,7 @@
                     <a class="nav-link active" aria-current="page" [routerLink]="['/']" (click)="toggleMenu()">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [href]="['/#services']" (click)="toggleMenu()">Services</a>
+                    <a class="nav-link" [href]="['/#services_anchor']" (click)="toggleMenu()">Services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" [routerLink]="['/about-me']" (click)="toggleMenu()">About me</a>
@@ -32,11 +32,11 @@
                 <li class="nav-item">
                     <a class="nav-link" [routerLink]="['/contact']" (click)="toggleMenu()">Contact</a>
                 </li>
-                <div class="mt-5">
+                <div class="mt-5 d-md-none">
                     <app-social-networks [iconType]="darkSocial"></app-social-networks>
                 </div>
             </ul>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-none d-md-inline-flex">
                 <!-- <li class="nav-item">
                     <a class="nav-link nav-link_contact" aria-current="page" href="tel:59176234714">
                         <img src="assets/img/telephone.png" alt="" class="nav-link_contact_image">

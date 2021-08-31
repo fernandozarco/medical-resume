@@ -5,8 +5,11 @@
     <div class="social-networks-container_item" [ngClass]="iconType">
         <mat-icon svgIcon="twitter" class="social-networks-container_item_icon" [ngClass]="iconType"></mat-icon>
     </div>
-    <div class="social-networks-container_item" [ngClass]="iconType">
+    <div class="social-networks-container_item" [ngClass]="iconType" *ngIf="isLight">
         <mat-icon svgIcon="instagram" class="social-networks-container_item_icon" [ngClass]="iconType"></mat-icon>
+    </div>
+    <div class="social-networks-container_item" [ngClass]="iconType" *ngIf="isDark">
+        <mat-icon svgIcon="instagram_original" class="social-networks-container_item_icon" [ngClass]="iconType"></mat-icon>
     </div>
     <div class="social-networks-container_item" [ngClass]="iconType">
         <mat-icon svgIcon="youtube" class="social-networks-container_item_icon" [ngClass]="iconType"></mat-icon>
